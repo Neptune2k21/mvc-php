@@ -28,4 +28,4 @@ $posts = getPosts();
 
 
 $statement->closeCursor(); // On ferme le curseur après avoir récupéré les données
-?>
+
