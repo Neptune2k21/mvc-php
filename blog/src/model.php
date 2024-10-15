@@ -1,5 +1,6 @@
 <?php
 // Connexion à la base de données
+function getPosts(){
 try {
     $database = new PDO('mysql:host=localhost;dbname=blog;charset=utf8', 'root', 'root');
 } catch (Exception $e) {
@@ -22,10 +23,7 @@ while ($row = $statement->fetch()) {
     ];
     $posts[] = $post;
 }
-require('templates/homepage.php');
-require('src/model.php');
-$posts = getPosts();
+return $posts;
+}
 
-
-$statement->closeCursor(); // On ferme le curseur après avoir récupéré les données
 ?>
