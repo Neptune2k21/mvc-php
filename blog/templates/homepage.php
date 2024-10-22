@@ -25,7 +25,7 @@
                <p class="card-text">
                   <?php echo nl2br(htmlspecialchars($post['content'])); ?>
                </p>
-               <a href="#" class="btn btn-primary btn-sm">Commentaires</a>
+               <a href="post.php?id=<?php echo urlencode($post['identifier']) ?>" class="btn btn-primary btn-sm">Commentaires</a>
             </div>
          </div>
          <?php } ?>
