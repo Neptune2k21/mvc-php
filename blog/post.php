@@ -7,6 +7,7 @@ $identifier = $_GET['id'];
 echo 'Erreur : aucun identifiant de billet envoyé';
 die;
 }
+
 $post = getPost($identifier);
 $comments = getComments($identifier);
 require('templates/post.php');

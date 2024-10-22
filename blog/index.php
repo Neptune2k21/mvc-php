@@ -16,6 +16,7 @@ $posts = [];
 while ($row = $statement->fetch()) {
     // On stocke chaque billet dans le tableau $posts
     $post = [
+        'identifier' => $row['id'],
         'title' => $row['titre'],
         'content' => $row['contenu'],
         'frenchCreationDate' => $row['date_creation_fr']
