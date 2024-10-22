@@ -32,11 +32,13 @@ method="post">
 <input type="submit" />
 </div>
 </form>
+
+
 <?php
 foreach ($comments as $comment) {
 ?>
-<p><strong><? echo htmlspecialchars($comment['author']) ?> </strong>
-le <?php echo $comment['french_creation_date'] ?> </p>
+<p><strong><?php echo htmlspecialchars($comment['author']) ?> </strong>
+le <?php echo $comment['frenchCreationDate'] ?> </p>
 <p><?php echo nl2br(htmlspecialchars($comment['comment'])) ?> </p>
 <?php
 }
