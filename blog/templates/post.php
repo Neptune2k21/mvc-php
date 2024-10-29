@@ -9,13 +9,14 @@
     <h1>Le super blog de l'AVBN !</h1>
     <p><a href="index.php">Retour à la liste des billets</a></p>
     <div class="news">
-        <h3>
-            <?php echo htmlspecialchars($post->title); ?>
-            <em>le <?php echo $post->frenchCreationDate; ?></em>
-        </h3>
-        <p>
-            <?php echo nl2br(htmlspecialchars($post->content)); ?>
-        </p>
+    <h3>
+    <?php echo htmlspecialchars($post->title) ?>
+    <em>le <?php echo $post->frenchCreationDate ?> </em>
+</h3>
+<p>
+    <?php echo nl2br(htmlspecialchars($post->content)) ?>
+</p>
+
     </div>
     <h2>Commentaires</h2>
     <form action="index.php?action=addComment&id=<?php echo $post->identifier; ?>" method="post">

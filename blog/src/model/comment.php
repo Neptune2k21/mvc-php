@@ -2,9 +2,9 @@
 
 class Comment
 {
-    public $author;             // Auteur du commentaire
-    public $frenchCreationDate; // Date de création formatée
-    public $comment;            // Contenu du commentaire
+    public $author;            
+    public $frenchCreationDate; 
+    public $comment;           
 }
 
 function getComments($identifier) {
